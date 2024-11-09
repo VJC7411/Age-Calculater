@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Navigation Section */
+
+header {
+  background-color: #00293b;
+  padding: 5px 50px;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 100px;
+}
+
+.nav {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  color: white;
+}
+
+/* Top & Bottom Section Combine CSS */
+
+.top_section {
+  display: flex;
+  width: 100%;
+}
+
+.top_left_section_first_half,
+.top_left_section_second_half {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-color: rgb(206, 206, 206);
+  border: 1px solid black;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top_left_section {
+  width: 75%;
+}
+
+
+.top_right_section {
+  width: 25%;
+  height: 80vh;
+  background-color: gray;
+  border: 1px solid black;
+}
+
+.top_right_section h1 {
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.top_right_section_table table {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bottom_right_section_img {
+  width: 200px;
+}
+.bottom_right_section {
+  background-color: #f52a01;
+}
+
+/* About Project & About us */
+
+.about_us,
+.about_project {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  padding: 40px;
+  font-size: 45px;
+  /* border: 2px solid black; */
+}
+
+.paragraph p {
+  color: rgb(31, 30, 30);
+  font-size: 30px;
+  padding: 30px;
+}
+
+.paragraph,
+.project {
+  margin-top: 2px;
+  background-color: rgb(206, 206, 206);
+  text-align: justify;
+  /* padding: 30px; */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* .about_project {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  padding: 40px;
+  font-size: 45px;
+} */
+
+.things_learned {
+  padding: 30px;
+  background-color: rgb(206, 206, 206);
+  font-size: 30px;
+  width: 60vw;
+  margin: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50vh;
+}
+
+.about_pro {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: black;
+}
+
+/* .about_we {
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  color: white;
+} */
+
+.reults {
+  display: flex;
+}
+.about_project_us {
+  color: black;
+  margin: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+.nav a {
+  color: white;
+}
+
+.age_result_details {
+  display: none;
+  background-color: yellow;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 100px;
+}
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+  .top_section {
+    display: flex;
+    flex-direction: column;
+  }
+  .top_left_section {
+    width: 100%;
+  }
+
+  .top_right_section {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+  .top_left_section_second_half {
+    display: none;
+  }
+  .prestige {
+    color: black;
+    /* gap: 30px; */
+    padding: 10px;
+    margin: 20px;
+    font-size: 15px;
+  }
+  .things_learned {
+    width: auto;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .prestige {
+    display: none;
+    gap: 20px;
+  }
+}
