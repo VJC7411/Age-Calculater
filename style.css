@@ -7,7 +7,7 @@
 /* Header Navigation Section */
 
 header {
-  background-color: #09b5ff;
+  background-color: darkgreen;
   padding: 5px 50px;
   height: 20vh;
   display: flex;
@@ -40,7 +40,7 @@ header img {
   justify-content: center;
   align-items: center;
   height: 40vh;
-  background-color: rgb(206, 206, 206);
+  background-color: rgb(197, 248, 191);
   border: 1px solid black;
   flex-direction: column;
   gap: 10px;
@@ -54,7 +54,7 @@ header img {
 .top_right_section {
   width: 25%;
   height: 80vh;
-  background-color: gray;
+  background-color: rgb(124, 250, 107);
   border: 1px solid black;
 }
 
@@ -83,7 +83,7 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
+  background-color: rgb(10, 247, 227);
   color: white;
   padding: 40px;
   font-size: 45px;
@@ -99,7 +99,7 @@ header img {
 .paragraph,
 .project {
   margin-top: 2px;
-  background-color: rgb(206, 206, 206);
+  background-color: rgb(135, 137, 236);
   text-align: justify;
   /* padding: 30px; */
   margin-right: auto;
@@ -119,7 +119,7 @@ header img {
 
 .things_learned {
   padding: 30px;
-  background-color: rgb(206, 206, 206);
+  background-color: rgb(255, 249, 171);
   font-size: 30px;
   width: 60vw;
   margin: 30px;
