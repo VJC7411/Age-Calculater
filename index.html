@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="icon" href="calculator.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <img src="Age.calculator.2.jpeg" />
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="about_project.html">About Project</a></li>
+      </ul>
+    </header>
+    <section>
+      <div class="top_section">
+        <div class="top_left_section">
+          <div class="top_left_section_first_half">
+            <h1 class="top_section_text">Age Calculator</h1>
+            <input class="first_name" type="text" placeholder="first name" />
+            <input class="last_name" type="text" placeholder="last name" />
+            <input class="my_year" type="date" placeholder="Birth Year" />
+            <button onclick="calculateAge()">calculate my age</button>
+            <h2 class="prestige"></h2>
+          </div>
+          <div class="top_left_section_second_half">
+            <div class="bottom_left_section">
+              <h2 class="age_result_details"></h2>
+            </div>
+            <!-- <aside class="bottom_right_section">
+            <img class="bottom_right_section_img" src="unnamed (1).png" />
+          </aside> -->
+          </div>
+        </div>
+        <aside class="top_right_section">
+          <h1>LeaderBoard</h1>
+          <div class="top_right_section_table">
+            <table border="1">
+              <thead class="_details">
+                <th>SR. No.</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Result</th>
+              </thead>
+              <tbody class="details_result">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tbody>
+            </table>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
