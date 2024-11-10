@@ -18,8 +18,8 @@ function calculateAge() {
   let currentMonth = currentDate.getMonth();
 
   let myBirthYear = my_year.value;
-  let userInput = new Date(myBirthYear);
-  let userBirthYear = userInput.getFullYear();
+  let userBirthDate = new Date(myBirthYear);
+  let userBirthYear = userBirthDate.getFullYear();
 
   let myAge = currentYear - userBirthYear;
   console.log(myAge);
@@ -27,10 +27,15 @@ function calculateAge() {
   let firstname = MyFirstName.value;
   let lastname = MylastName.value;
 
+
+  
+
   if (myBirthYear == "" || firstname == "" || lastname == "") {
     age_result_details.textContent =
       "First Name, Last Name or BirthYear is Empty";
     age_result_details.style.display = "Block";
+  } else if (userBirthDate > currentDate) {
+    age_result_details.innerHTML = 'Please Enter A Valid Date/DOB'
   } else if (myAge >= 13 && myAge <= 19) {
     age_result_details.innerHTML = `Hello, ${firstname} ${lastname} your age is ${myAge} years and ${currentMonth} months and you are a teenager😎🧑👧👦.`;
     age_result_details.style.display = "Block";
@@ -65,7 +70,8 @@ function calculateAge() {
     userType = "Child";
   }
 
-  if (myBirthYear != "" && firstname != "" && lastname != "") {
+  
+  if (myBirthYear != "" && firstname != "" && lastname != "" && userBirthDate < currentDate) {
     let results = age_result_details.innerHTML;
     let userdata = {
       full_name: `${firstname} `,
